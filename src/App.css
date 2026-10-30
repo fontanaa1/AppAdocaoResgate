@@ -1,0 +1,278 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: #FFF7EF;
+  color: #69483B;
+  padding: 35px 20px;
+  overflow: hidden;
+}
+
+.app-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.logo-paw {
+  width: 75px;
+  height: 75px;
+  background: #FFE5D0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin: 0 auto 15px;
+}
+
+.app-header h1 {
+  font-size: clamp(27px, 5vw, 38px);
+  font-weight: 900;
+  color: #A95630;
+}
+
+.app-header h1 span {
+  color: #F28C52;
+}
+
+.app-header p {
+  color: #A17C69;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.app-content {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.hero-card {
+  background: #FFE5CE;
+  border-radius: 35px;
+  padding: 35px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.hero-pets {
+  font-size: 75px;
+  margin-bottom: 15px;
+}
+
+.hero-card h2 {
+  color: #A95630;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.hero-card p {
+  color: #98715D;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.decor {
+  position: absolute;
+  color: #F28C52;
+  font-size: 30px;
+}
+
+.decor-one {
+  top: 15px;
+  right: 25px;
+}
+
+.decor-two {
+  bottom: 15px;
+  left: 20px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background: white;
+  border: 1px solid #F8E4D5;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 18px rgba(160, 100, 60, 0.05);
+}
+
+.info-icon {
+  min-width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background: #FFF0E4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.info-card h3 {
+  color: #A95630;
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+.info-card p {
+  color: #987D70;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.camera-button {
+  width: 100%;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #F28C52;
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(242, 140, 82, 0.25);
+  transition: 0.2s;
+}
+
+.camera-button:hover {
+  background: #E77940;
+  transform: translateY(-2px);
+}
+
+.camera-button:active {
+  transform: scale(0.97);
+}
+
+.message {
+  background: #FFF0E4;
+  border: 1px solid #F7D7C1;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 17px;
+  color: #A95630;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.preview-section {
+  margin-top: 30px;
+}
+
+.preview-section h3 {
+  color: #A95630;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 13px;
+}
+
+.empty-preview {
+  border: 2px dashed #F3C7A8;
+  background: #FFFAF5;
+  border-radius: 25px;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.preview-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #FFEAD9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  margin: 0 auto 15px;
+}
+
+.empty-preview h4 {
+  color: #A95630;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.empty-preview p {
+  color: #B49A8B;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.photo-card {
+  background: white;
+  padding: 12px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(160, 100, 60, 0.10);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.photo-card p {
+  color: #A95630;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px 5px 5px;
+}
+
+.app-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.app-footer div {
+  font-size: 25px;
+}
+
+.app-footer p {
+  font-size: 14px;
+  color: #A17C69;
+  margin-top: 10px;
+}
+
+.app-footer span {
+  display: block;
+  font-size: 11px;
+  color: #C1A99B;
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .app-container {
+    padding: 25px 15px;
+  }
+
+  .hero-card {
+    padding: 28px 15px;
+  }
+
+  .info-card {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .info-card h3 {
+    font-size: 15px;
+  }
+}
